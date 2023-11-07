@@ -5,15 +5,7 @@ class Calculator:
     A simple calculator class that provides basic mathematical operations.
     """
 
-    def add(self, x, y):
-        """
-        Add two numbers.
-
-        :param x: The first number.
-        :param y: The second number.
-        :return: The sum of x and y.
-        """
-        return x + y
+   
     def subtract(self, x, y):
         """
         Subtract two numbers.
