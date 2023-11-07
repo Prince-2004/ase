@@ -4,7 +4,14 @@ class Calculator:
     """
     A simple calculator class that provides basic mathematical operations.
     """
-   
+    def add(self, x_1, y_1):
+        """
+        Add two numbers.
+        :param x_1: The first number.
+        :param y_1: The second number.
+        :return: The sum of x_1 and y_1.
+        """
+        return x_1 + y_1
     def subtract(self, x_1, y_1):
         """
         Subtract two numbers.
@@ -32,7 +39,7 @@ class Calculator:
         if y_1 == 0:
             raise ValueError("Division by_1 zero is not allowed")
         return x_1 / y_1
-    def add1(self, x_1, y_1):
+    def add(self, x_1, y_1):
         """
         Add two numbers.
         :param x_1: The first number.
@@ -46,7 +53,7 @@ class CalculatorTest(unittest.TestCase):
     """
     def setUp(self):
         self.calc = Calculator()
-    def test_add1(self):
+    def test_add(self):
         """
         Test the add method.
         """
@@ -61,7 +68,11 @@ class CalculatorTest(unittest.TestCase):
         Test the multiply method.
         """
         self.assertEqual(20, self.calc.multiply_1(4, 5), "Multiplication is wrong")
-    
+    def test_divide(self):
+        """
+        Test the divide method.
+        """
+        self.assertEqual(3, self.calc.divide(6, 2), "Division is wrong")
     def test_add1(self):
         """
         Test the add method.
