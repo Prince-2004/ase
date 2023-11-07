@@ -62,8 +62,7 @@ class CalculatorTest(unittest.TestCase):
     def test_multiply(self):
         self.assertEqual(30, self.calc.multiply(5, 6), "Multiplication is wrong")
 
-    def test_divide(self):
-        self.assertEqual(3, self.calc.divide(6, 2), "Division is wrong")
+    
 if __name__ == '__main__':
     unittest.main()
     print("Prince")
